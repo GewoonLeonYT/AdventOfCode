@@ -23,4 +23,4 @@ for i in range(3):
         thirdPlace = most
     most = 0
 print(f"1st place: {firstPlace}\n2nd place: {secondPlace}\n3rd place: {thirdPlace}")
-print("Total: " + str(firstPlace + secondPlace + thirdPlace))
+print(f"Total: {firstPlace + secondPlace + thirdPlace}")

@@ -2,7 +2,7 @@ with open("input.txt", 'r') as f:
     input = f.read().splitlines()
 backpack = input
 backpackCompartments = [[i[:len(i)//2], i[len(i)//2:]] for i in backpack]
-backpackGroups = []
+backpackGroups = [backpack[i:i+3] for i in range(0, len(backpack), 3)]
 sumPriorityCompartments = 0
 sumPriorityGroups = 0
 
@@ -14,8 +14,6 @@ for i in backpackCompartments:
         else:
             sumPriorityCompartments += ord(j) - 0x26
 
-for i in range(0, len(backpack), 3):
-    backpackGroups.append(backpack[i:i+3])
 for i in backpackGroups:
     lettersInCommon = set.intersection(set(i[0]), set(i[1]), set(i[2]))
     for j in lettersInCommon:
