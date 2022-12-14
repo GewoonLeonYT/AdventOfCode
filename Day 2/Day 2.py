@@ -65,5 +65,5 @@ for i in strategyGuide:
                     pointsPartTwo += 3
                 case 'C':
                     pointsPartTwo += 1
-print(f"The answer to part 2 is {pointsPartOne}")
+print(f"The answer to part 1 is {pointsPartOne}")
 print(f"The answer to part 2 is {pointsPartTwo}")
